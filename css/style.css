@@ -1,0 +1,13 @@
+body{
+	margin: 0;
+	background-image: url(../img/bg.jpg);
+}
+.header{
+	height: 150px;
+}
+.content{
+	border:10px outset grey;
+}
+.footer{
+	height: 50px;
+}
