@@ -2,12 +2,35 @@ body{
 	margin: 0;
 	background-image: url(../img/bg.jpg);
 }
-.header{
-	height: 150px;
+@font-face{
+	font-family:Xarrow;
+	src:url(../fonts/12517.otf);
 }
 .content{
-	border:10px outset grey;
+	border-left:10px outset grey;
+	border-right:10px outset grey;
 }
-.footer{
-	height: 50px;
+.logo{
+	margin: 0;
+	text-shadow: 0px 0px 10px black;
+	transition: 1s;
 }
+.categories{
+	height: 120px;
+}
+.cat{
+	width: 33.333333333333333%;
+	background: black;
+	float: left;
+	text-align: center;
+	font-size: 150%;
+	border-bottom: 10px solid grey;
+	border-top:10px solid white;
+	height: 100%;
+}
+	.cat:hover{
+		border-bottom: 10px solid black;
+		border-top:10px solid black;
+		background: white;
+		color: black;
+	}

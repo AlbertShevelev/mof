@@ -9,21 +9,72 @@
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
 </head>
 <body>
-	<div class="header grey">
-		Perfect Angle
-	</div>
-	<div class="main container">
-		<div class="content grey lighten-1" style="height: 768px;">
-			<div class="categories">
-				<div>История социальных фотографий и фотографов</div>
-				<div>Социальные фотографии и их разбор</div>
-				<div>Мои фотографии</div>
+	<div class="header white center-align" style="font-family: Xarrow">
+		<h1 class="logo">
+			Perfect Angle
+		</h1>
+		<div class="categories white-text ">
+			<div class="first cat">
+				История фотографий и фотографов
+			</div>
+			<div class="second cat ">
+				Социальные фотографии и их разбор
+			</div>
+			<div class="third cat ">
+				Мой альбом
 			</div>
 		</div>
 	</div>
-	<div class="footer black white-text">
-		© 2018 Copyright
+	<div class="main container">
+		<div class="content grey lighten-1">
+			 <div class="row table1" style="margin: 0">
+			    <div class="col s12">
+			      <div class="card black">
+			        <div class="card-content white-text">
+			          <span class="card-title">Фотография</span>
+			          <p>Фотография — технология записи изображения путём регистрации оптических излучений с помощью фотоматериала или полупроводникового преобразователя. В отличие от некоторых других языков, в русском слово "фотография" используется только применительно к неподвижным изображениям. В то же время, в профессиональном кинематографе этот термин обозначает изобразительное решение фильма, создаваемое кинооператором. Фотографиями также называются конечные отпечатки фотографического изображения, изготовленные на фотобумаге химическим способом или на обычной бумаге цифровым принтером.<br><br>На технологиях фотографии основано фотоискусство, которое считается одним из видов изобразительного искусства, и занимает ключевое место в современной массовой культуре. Первое устойчивое фотографическое изображение было создано в 1822 году французом Жозефом Нисефором Ньепсом, но оно не сохранилось до наших дней. Датой изобретения технологии по решению IX Международного конгресса научной и прикладной фотографии считается 7 января 1839 года, когда Франсуа Араго сделал доклад о дагеротипии на заседании Французской академии наук.<br><br>Человек, осуществляющий фотосъёмку называется фотографом. В большинстве случаев он же выполняет все остальные стадии создания фотоизображения, однако часто техническая часть работы выполняется фотолаборантами, ретушёрами, фоторедакторами и представителями других профессий. В профессиональной студийной фотографии некоторые обязанности фотограф перепоручает своим ассистентам.</p>
+			        </div>
+			      </div>
+			    </div>
+			</div>
+		</div>
 	</div>
-	<script type="text/javascript" src="js/materialize.min.js"></script>
+	<footer class="page-footer grey darken-4">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">Footer Content</h5>
+                <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Ссылки</h5>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="https://ru.wikipedia.org/wiki/Фотография">Wikipedia</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright grey darken-3">
+            <div class="container">
+            © 2018 Copyright
+            </div>
+          </div>
+        </footer>
+<script type="text/javascript" src="js/materialize.min.js">
+	var first=document.querySelector(".first");
+	var second=document.querySelector(".second");
+	var third=document.querySelector(".third");
+	var table1=document.querySelector(".table1");
+	//var table2=document.querySelector(".table2");
+	//var table3=document.querySelector(".table3");
+	first.onclick=function(){
+		table1.style.display="block";
+		//table2.style.display="none";
+		//table3.style.display="none";
+	}
+</script>
 </body>
 </html>
